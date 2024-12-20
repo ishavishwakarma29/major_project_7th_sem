@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+     <div class="container">
+        <h1>Welcome to the Drowsiness Detection App</h1>
+        <button onclick="location.href='/start_trip'">Start Trip</button>
+        <form method="post" enctype="multipart/form-data">
+            <label for="image">Upload image</label>
+            <input id="image" type="file" name="image" accept="image/*" required />
+            <button type="submit" class="btn-primary">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
